@@ -9,19 +9,12 @@ const propTypes = {
 };
 
 const defaultProps = {
-  text: "",
-  isActive: false
+  text: ""
 };
 
-function Button({ text, isActive, ...rest }) {
+function Button({text}) {
   return (
-    <button
-      type="button"
-      {...rest}
-      style={{
-        borderStyle: isActive ? "inset" : "outset"
-      }}
-    >
+    <button type="button" >
       {text}
     </button>
   );
