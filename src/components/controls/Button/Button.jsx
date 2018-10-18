@@ -9,15 +9,11 @@ const propTypes = {
 };
 
 const defaultProps = {
-  text: ""
+  text: "BUY"
 };
 
-function Button({text}) {
-  return (
-    <button type="button" >
-      {text}
-    </button>
-  );
+function Button({ text }) {
+  return <button type="button">{text}</button>;
 }
 
 Button.displayName = displayName;

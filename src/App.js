@@ -13,11 +13,11 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
+          <div>
+            <Button />
+            <OkButton />
+          </div>
         </header>
-        <div>
-          <Button text="Name" />
-          <OkButton />
-        </div>
       </div>
     );
   }
