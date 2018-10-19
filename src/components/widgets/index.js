@@ -1,3 +1,6 @@
-import Product from "./Product";
+import Header from './Header';
+import Products from './Products';
 
-export { Product };
+export {
+  Header,  Products, 
+};
