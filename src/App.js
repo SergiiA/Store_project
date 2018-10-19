@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+//import { Provider } from "react-redux";
+
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import store from "store/store";
-import { Provider } from "react-redux";
+//import store from "./store/store";
 import DefaultLayout from "./components/layouts/DefaultLayout";
 
 import Catalog from "./components/pages/Catalog/Catalog";
@@ -24,17 +25,7 @@ class App extends Component {
           <div>
             <Button />
           </div>
-          <div className="Catalog" style={{ display: "inline" }}>
-            <Provider store={store}>
-              <BrowserRouter>
-                <Switch>
-                  <Route path="/" exact component={Catalog} />
-                  <Route path="/order" component={Order} />
-                  <Route path="/cart" component={Cart} />
-                </Switch>
-              </BrowserRouter>
-            </Provider>
-          </div>
+          <div className="Catalog" style={{ display: "inline" }} />
         </header>
       </div>
     );
