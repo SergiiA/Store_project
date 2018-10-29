@@ -1,5 +1,5 @@
 import selectProduct from "./select";
-import products from "./fetch";
+import fetchProducts from "./products";
 import changeQuantity from "./change";
 
-export { selectProduct, products, changeQuantity };
+export { selectProduct, fetchProducts, changeQuantity };

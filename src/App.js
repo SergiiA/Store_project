@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import logo from "./logo.svg";
 import "./App.css";
-//import store from "./store/store";
+import store from "./store/store";
 import DefaultLayout from "./components/layouts/DefaultLayout";
 
 import Catalog from "./components/pages/Catalog/Catalog";

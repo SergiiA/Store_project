@@ -1,6 +1,6 @@
 import { handleActions } from "redux-actions";
 import { List } from "immutable";
-import { selectProduct, increaseQuantity } from "../actions";
+import { selectProduct, changeQuantity } from "../actions";
 
 let id = 1;
 
@@ -15,7 +15,7 @@ const selectedProducts = handleActions(
 
       return state.push({ id, ...product });
     },
-    [increaseQuantity]: (state, action) => {
+    [changeQuantity]: (state, action) => {
       const product = action.payload;
       product.quantity += 1;
       return state.set(state.findIndex(p => p.id === product.id), product);
